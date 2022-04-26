@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Learn to count</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Counting to 100 in different languages</h1>
+    <div id="game">
+      <div id="display"></div>
+      <form id="form">
+        <input type="number" id="input" min="0" max="100" placeholder="Type your answer" autocomplete="off" autofocus required>
+        <input type="submit" id="check" value="Check" hoverable>
+        <input type="button" id="skip" value="Skip" hoverable>
+        <input type="button" id="show" value="Show answer" hoverable>
+        <br>
+        <input type="number" id="maximum" value="100" placeholder="Maximum number">
+        <select id="select" form="form" required>
+          <optgroup label="Easy">
+            <option value="english">English</option>
+            <option value="dutch">Dutch</option>
+          </optgroup>
+          <optgroup label="Medium">
+            <option value="german">German</option>
+            <option value="chinese">Chinese</option>
+          </optgroup>
+          <optgroup label="Difficult">
+            <option value="russian">Russian</option>
+            <option value="french">French</option>
+          </optgroup>
+        </select>
+        <input type="button" value="Normal" id="reverse" hoverable>
+      </form>
+      <p id="message">Not correct / Correct / Invalid input</p>
+    </div>
+    <footer>
+      <p>© 2022 | Designed by Charley Chen</p>
+    </footer>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

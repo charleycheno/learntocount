@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #eee;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  max-width: 1024px;
+  width: 100%;
+  background-color: #fff;
+}
+
+#game {
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#display {
+  font-size: 50px;
+  margin: 100px 0;
+  text-shadow: 0 0 10px gray;
+}
+
+form {
+  margin: 10px;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+input, select {
+  border: black solid 1px;
+  padding: 5px;
+  transition: 300ms;
+}
+
+input[hoverable]:hover {
+  cursor: pointer;
+  transform: scale(111%);
+}
+
+#check {
+  background-color: lime;
+}
+
+#skip {
+  background-color: rgb(255, 100, 45);
+}
+
+#show {
+  background-color: cyan;
+}
+
+#select {
+  background-color: white;
+}
+
+#reverse {
+  background-color: white;
+}
+
+#message {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  opacity: 0;
+  margin: 10px;
+  color: red;
+}
